@@ -1,4 +1,4 @@
-# IONICv2-ionicTemplate took photo from gallery and store it in database as base64
+# IONIC v2 - Choose photo from gallery and store it in database as base64
 
 ## INSTRUCTION
 ```sh
