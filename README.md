@@ -3,8 +3,8 @@
 ## INSTRUCTION
 ```sh
     npm install
-    ionic state reset
     ionic platform add [android] [ios] [windows]
+    ionic state reset
     ionic run [android] [ios] [windows]
 ```
 
