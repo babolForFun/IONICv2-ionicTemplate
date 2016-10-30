@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.database.img2blob" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>DatabaseBlob</name>
-  <description>Save img in base64</description>
+<widget id="com.database.ionic2template" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Ionic 2 Template</name>
+  <description> Ionic 2 functionalities </description>
   <author>babolForFun</author>
   <content src="index.html"/>
   <access origin="*"/>

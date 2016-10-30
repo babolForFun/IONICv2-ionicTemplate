@@ -59,6 +59,21 @@ export class DatabaseService {
     })
   }
 
+  public deletePreviousImage(){
+    this._query =
+        " DELETE FROM " + this._global.TABLE_SYSTEM +
+        " WHERE "       + this._global.SYSTEM_ID    + " = ?";
+
+    return new Promise((resolve, reject) => {
+      this._db.executeSql(this._query, ["1"])
+          .then(
+              (success) => { resolve(); },
+              (error)   => { reject(); this._global.displayErrorMessage("Database", "deletePreviousImage", error); }
+          );
+    })
+  }
+
+
   public saveImage(base64image){
 
     this._query =

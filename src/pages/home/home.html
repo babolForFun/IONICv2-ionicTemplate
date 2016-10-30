@@ -1,13 +1,18 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Photo</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
-  <button ion-button (click)="choosePhoto()">Open gallery</button>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-50><button ion-button (click)="choosePhoto(0)"> CAMERA        </button></ion-col>
+      <ion-col width-50><button ion-button (click)="choosePhoto(1)"> PHOTO GALLERY </button></ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <img alt="" src="{{_request}}" style="height:100px; width:100px">
+  <img alt="" src="{{_request}}" style="height:100%; width:100%">
 
 </ion-content>
