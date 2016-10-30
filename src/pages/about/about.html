@@ -8,4 +8,14 @@
 
 <ion-content padding>
 
+  <ion-grid>
+    <ion-row>
+      <ion-col width-50><button ion-button (click)="getRequest()" > GET REQUEST </button></ion-col>
+      <ion-col width-50><button ion-button (click)="postRequest()"> POST REQUEST</button></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <pre style="height:100%; width:100%">{{_response}}</pre>
+
+
 </ion-content>

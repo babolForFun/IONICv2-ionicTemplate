@@ -11,14 +11,11 @@ export class DatabaseService {
 
   private _query : string;
   private _db    : SQLite;
-  private _global: GlobalVariables;
 
   constructor(
     public platform : Platform,
-    public global   : GlobalVariables
+    public _global  : GlobalVariables
   ) {
-      this._global = global;
-
       platform.ready()
         .then(
         (success) => {
