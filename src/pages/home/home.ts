@@ -1,5 +1,4 @@
 import { Component }            from '@angular/core';
-import { NavController}         from 'ionic-angular';
 import { Camera }               from 'ionic-native';
 import { DatabaseService}       from "../../providers/database-service";
 import { GlobalVariables}       from "../../providers/global-variables";
@@ -13,17 +12,12 @@ import { GlobalVariables}       from "../../providers/global-variables";
 export class HomePage {
 
   public  _request : any;
-  private _global : GlobalVariables;
 
   constructor(
-    public  navCtrl           : NavController,
     private _databaseService  : DatabaseService,
-    public global             : GlobalVariables) {
-
-    this._global = global;
-
-  }
+    public _global            : GlobalVariables) {}
   
+    
   /* DATABASE */
 
   choosePhoto(source: number){
